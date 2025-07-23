@@ -2,8 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 
-export default defineConfig({
-  base: '/kanyozatech-creator/',
+export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? '/kanyozatech-creator/' : '/',
   plugins: [react()],
   resolve: {
     alias: {
@@ -13,6 +13,21 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     emptyOutDir: true,
-    sourcemap: false
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name]-[hash][extname]',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+      }
+    }
+  },
+  server: {
+    port: 3000,
+    strictPort: true
+  },
+  preview: {
+    port: 4173,
+    strictPort: true
   }
-});
+}));

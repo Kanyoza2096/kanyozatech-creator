@@ -44,25 +44,25 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'hello@kanyozatech.dev',
-      href: 'mailto:hello@kanyozatech.dev'
+      value: 'kmadalitso01@gmail.com',
+      href: 'mailto:kmadalitso01@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '+265 885616130',
+      href: 'tel:+265885616130'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Chiradzulu, Malawi',
       href: '#'
     }
   ];
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/Kanyoza2096', label: 'GitHub' },
     { icon: Linkedin, href: '#', label: 'LinkedIn' },
     { icon: Twitter, href: '#', label: 'Twitter' }
   ];

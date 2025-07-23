@@ -4,9 +4,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/Kanyoza2096', label: 'GitHub' },
     { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:hello@kanyozatech.dev', label: 'Email' }
+    { icon: Mail, href: 'mailto:kmadalitso01@gmail.com', label: 'Email' }
   ];
 
   const quickLinks = [
@@ -69,9 +69,9 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-foreground">Get In Touch</h4>
             <div className="space-y-2 text-muted-foreground">
-              <p>📧 hello@kanyozatech.dev</p>
-              <p>📱 +1 (555) 123-4567</p>
-              <p>📍 San Francisco, CA</p>
+              <p>📧 kmadalitso01@gmail.com</p>
+              <p>📱 +265 885616130</p>
+              <p>📍 Chiradzulu, Malawi</p>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@ const Footer = () => {
               © {currentYear} KanyozaTech. All rights reserved.
             </p>
             <p className="text-muted-foreground text-sm flex items-center gap-1">
-              Made with <Heart className="w-4 h-4 text-red-500 animate-pulse" /> using React & TypeScript
+              Made with <Heart className="w-4 h-4 text-red-500 animate-pulse" /> by Madalitso Kanyoza
             </p>
           </div>
         </div>

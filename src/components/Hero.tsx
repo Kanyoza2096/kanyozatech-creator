@@ -26,7 +26,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-20"
@@ -43,8 +43,8 @@ const Hero = () => {
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <div className="space-y-8">
           {/* Logo/Brand */}
-          <div className="inline-block glass rounded-2xl px-8 py-4 mb-8">
-            <h2 className="text-2xl font-bold gradient-text tracking-wider">
+          <div className="inline-block glass rounded-2xl px-6 md:px-8 py-3 md:py-4 mb-6 md:mb-8">
+            <h2 className="text-xl md:text-2xl font-bold gradient-text tracking-wider">
               KANYOZA<span className="text-cyber">TECH</span>
             </h2>
           </div>

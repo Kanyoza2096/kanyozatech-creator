@@ -32,13 +32,13 @@ const Navigation = () => {
       isScrolled ? 'glass border-b border-glass-border' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div 
-            className="cursor-pointer"
+            className="cursor-pointer flex-shrink-0"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            <h1 className="text-xl font-bold gradient-text tracking-wider">
+            <h1 className="text-lg md:text-xl font-bold gradient-text tracking-wider whitespace-nowrap">
               KANYOZA<span className="text-cyber">TECH</span>
             </h1>
           </div>

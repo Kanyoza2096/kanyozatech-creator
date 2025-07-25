@@ -60,8 +60,11 @@ const SkillBar = ({ skill, inView }: { skill: Skill; inView: boolean }) => {
       </div>
       <div className="h-2 bg-secondary rounded-full overflow-hidden skill-progress">
         <div 
-          className={`h-full rounded-full transition-all duration-1000 ease-out bg-${categoryColors[skill.category]}`}
-          style={{ width: `${width}%` }}
+          className="h-full rounded-full transition-all duration-1000 ease-out"
+          style={{ 
+            width: `${width}%`,
+            backgroundColor: `hsl(var(--${categoryColors[skill.category]}))`
+          }}
         />
       </div>
     </div>

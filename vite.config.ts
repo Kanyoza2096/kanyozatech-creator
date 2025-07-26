@@ -1,20 +1,20 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import path from 'path' // ← Must be imported
+import path from 'path'
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/kanyozatech-creator/' : '/',
+  base: '/kanyozatech-creator/', // Must match repo name exactly
   plugins: [react()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
   },
-  server: {
-    port: 8080
-  },
   build: {
     outDir: 'dist',
     emptyOutDir: true,
+    rollupOptions: {
+      input: path.resolve(__dirname, 'index.html')
+    }
   }
 })

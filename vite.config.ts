@@ -2,8 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
-export default defineConfig({
-  base: '/kanyozatech-creator/', // Must match repo name exactly
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/kanyozatech-creator/' : '/',
   plugins: [react()],
   server: {
     port: 8080
@@ -20,4 +20,4 @@ export default defineConfig({
       input: path.resolve(__dirname, 'index.html')
     }
   }
-})
+}))
